@@ -11,23 +11,27 @@
 
 // for da 1 a 100 (incluso)
 for (let i=1;i<=100;i++){
-    let risultato=i;
-//se il numero è multiplo di 3
-    if(i%3==0){
-    // allora faccio...
-     risultato='Fizz';
-    }
-    //se il numero è multiplo di5
-    if(i%5==0){
-        // allora faccio...
-        risultato='Buzz';
-    }
-// se è multiplo di 3 e 5 stampo "FizzBuss"
-    if (i%3==0 && i%5==0){
-        risultato='FizzBuss';
-    }
-    console.log(risultato);
+    let risultato;
+ // se è multiplo di 3 e 5 stampo "FizzBuss"
+ if (i%3==0 && i%5==0){
+    risultato='FizzBuss';
 }
+//se il numero è multiplo di 3
+else if(i%3==0){
+    // allora faccio...
+ risultato='Fizz';
+}
+//se il numero è multiplo di5
+else if(i%5==0){
+    // allora faccio...
+    risultato='Buzz';
+}
+else{
+    risultato=i;
+}
+console.log(risultato);
+}
+
 
 
 
